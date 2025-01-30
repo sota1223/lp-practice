@@ -69,3 +69,39 @@
   margin-left: 100px;
   margin-bottom: 40px;
 }
+
+.tittle {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.images{
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+.table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ddd; /* セルの枠線 */
+  padding: 20px; /* セル内の余白 */
+  text-align: center; /* テキスト中央揃え */
+}
+
