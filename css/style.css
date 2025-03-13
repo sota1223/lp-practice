@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width: 1025px) {
+/*@media (min-width: 1025px) {
   .inner {
     width: 1100px;
   }
@@ -10,38 +10,7 @@
   .inner {
     width: 97%;
   }
-}
-
-
-@media (max-width: 1199px) {
-
-  .main-text {
-    display: flex;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    width: 100%;
-    height: 300px;
-  }
-
-  .news-text {
-    padding-bottom: 150px;
-  }
-
-  .skills {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .images {
-    width: 100%;
-    height: auto;
-    opacity: 0.7;
-  }
-}
+}*/
 
 .inner {
   margin: 0 auto;
@@ -70,7 +39,7 @@ nav {
   align-items: center;
 }
 
-button {
+button.contact-btn {
   padding: 10px 20px;
   background-color: #6ba7eb;
   color: #fff;
@@ -80,9 +49,23 @@ button {
   transition: color 0.3s ease;
 }
 
-button:hover {
+button.contact-btn:hover {
   background-color: #5a92d5;
   color: #333;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 45px;
+  height: 4px;
+  background-color: #d3d3d3;
+  border-radius: 5px;
 }
 
 .image-container {
@@ -274,4 +257,174 @@ footer p {
   font-size: 13px;
   letter-spacing: 0.5px;
   margin: 0;
+}
+
+
+/* タブレット版*/
+@media (max-width: 1199px) {
+
+  .text-container {
+    padding: 250px 0;
+  }
+
+  .main-text {
+    font-size: 65px;
+    display: block;
+    text-align: center;
+    line-height: 1.1;
+    margin: 0 0 -40px 0;
+    letter-spacing: -2px
+  }
+
+  .sub-text {
+    margin: 0;
+    font-size: 48px;
+    display: block;
+    text-align: center;
+    letter-spacing: -2px
+  }
+
+  .main-text span {
+    display: block;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    height: 350px;
+  }
+
+  .image2 {
+  padding: 0;
+}
+
+  .news {
+  margin: 20px 0;
+  text-align: center;
+}
+
+  .news-text {
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 0;
+    margin: 0 auto;
+  }
+
+  .skills :nth-child(3) {
+    margin-bottom: 80px;
+  }
+
+  .skills a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* スマホ版 */
+@media (max-width: 767px) {
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .text-container {
+    padding: 200px 0;
+  }
+
+  .main-text {
+    font-size: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sub-text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text-container h1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skills a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills a:nth-child(3) {
+    margin-bottom: 40px;
+  }
+
+  .news-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .news {
+    font-size: 30px;
+  }
+
+  .tittle {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .plan {
+    padding: 30px 0;
+  }
+
+  th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .sns {
+    flex-direction: column;
+    padding: 50px 0px;
+    width: 100%;
+  }
+
+  .icon {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    margin: 25px 0;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
 }
