@@ -276,6 +276,14 @@ footer p {
 /* タブレット版*/
 @media (max-width: 1199px) {
 
+  .image {
+    height: 100%;
+  }
+
+  .image-container {
+    height: 70vh;
+  }
+
   .text-container {
     padding: 250px 0;
   }
